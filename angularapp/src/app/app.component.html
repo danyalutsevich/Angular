@@ -3,7 +3,18 @@
   <span>My App</span>
   <span class="example-spacer"></span>
 </mat-toolbar>
+
+<div class="bg-blue-600">
+  <ul>
+    <li *ngFor="let c of cars">
+      <app-car [car]="c"></app-car>
+    </li>
+  </ul>
+</div>
+
 <app-car></app-car>
+<app-input-car (outCar)="addCar($event)"></app-input-car>
 <app-counter></app-counter>
 <app-resume></app-resume>
 <app-hobby></app-hobby>
+<app-image></app-image>

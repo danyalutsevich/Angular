@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component,Input} from '@angular/core';
+import type {ICar} from '../../models/ICar';
 
 @Component({
     selector: 'app-car',
@@ -6,6 +7,8 @@ import {Component} from '@angular/core';
     styleUrls: ['./car.component.scss']
 })
 export class CarComponent{
-    title:string = 'Car Component';
-    cars = ["audi","bmw","mercedes"]
+
+    @Input() car:ICar={name:'',model:'',year:0,color:''};
+    
+ 
 }

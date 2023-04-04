@@ -11,6 +11,10 @@ import { CarComponent } from './components/car/car.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { HobbyComponent } from './components/hobby/hobby.component';
+import { UppercasePipe } from './pipes/custom.pipe';
+import { ImageComponent } from './components/image/image.component';
+import { FormsModule } from '@angular/forms';
+import { InputCarComponent } from './components/input-car/input-car.component';
 
 @NgModule({
   declarations: [
@@ -18,16 +22,20 @@ import { HobbyComponent } from './components/hobby/hobby.component';
     CarComponent,
     CounterComponent,
     ResumeComponent,
-    HobbyComponent
+    HobbyComponent,
+    UppercasePipe,
+    ImageComponent,
+    InputCarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    FormsModule,
     MatIconModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
