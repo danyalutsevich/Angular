@@ -15,6 +15,8 @@ import { UppercasePipe } from './pipes/custom.pipe';
 import { ImageComponent } from './components/image/image.component';
 import { FormsModule } from '@angular/forms';
 import { InputCarComponent } from './components/input-car/input-car.component';
+import { ZoomDirective } from './directives/zoom.directive';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { InputCarComponent } from './components/input-car/input-car.component';
     UppercasePipe,
     ImageComponent,
     InputCarComponent,
+    ZoomDirective,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
