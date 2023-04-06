@@ -14,6 +14,8 @@ export class AppComponent {
   website: string = 'https://www.website.com';
   summary: string = 'Summary of your skills and experience.';
   skills: string[] = ['Skill 1', 'Skill 2', 'Skill 3'];
+  class: string = 'contacts';
+  style: string = 'red';
   experience: any[] = [
     {
       company: 'Company 1',

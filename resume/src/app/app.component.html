@@ -4,31 +4,31 @@
   <p>{{title}}</p>
   <p>{{email}}</p>
   <p>{{phone}}</p>
-  <p>{{address}}</p>
+  <p>{{address | titlecase}}</p>
   <a href="{{website}}">{{website}}</a>
-  <p>{{summary}}</p>
-  <section class="contacts">
+  <p>{{summary | uppercase}}</p>
+  <section ngClass="{{class}}">
     <h2>Contacts</h2>
     <a href="https://github.com/danyalutsevich">Github</a>
     <a href="https://www.linkedin.com/in/danya-lutsevich-6410ba17a/">LinkedIn</a>
     <a href="https://twitter.com/danyalutsevich">Twitter</a>
-    
+
   </section>
   <section>
-      <h2>Skills</h2>
-      <ul>
-          <li *ngFor="let skill of skills">{{skill}}</li>
-      </ul>
+    <h2 [ngStyle]="{'color': style}">Skills</h2>
+    <ul>
+      <li *ngFor="let skill of skills">{{skill | uppercase}}</li>
+    </ul>
   </section>
   <section>
-      <h2>Experience</h2>
-      <ul>
-          <li *ngFor="let job of experience">
-              <h3>{{job.title}}</h3>
-              <p>{{job.company}}</p>
-              <p>{{job.years}}</p>
-              <p>{{job.description}}</p>
-          </li>
-      </ul>
+    <h2>Experience</h2>
+    <ul>
+      <li *ngFor="let job of experience">
+        <h3>{{job.title }}</h3>
+        <p>{{job.company}}</p>
+        <p>{{job.years}}</p>
+        <p>{{job.description }}</p>
+      </li>
+    </ul>
   </section>
 </article>
