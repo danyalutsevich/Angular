@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { InputCarComponent } from './components/input-car/input-car.component';
 import { ZoomDirective } from './directives/zoom.directive';
 import { HeaderComponent } from './components/header/header.component';
+import { CarCardsComponent } from './car-cards/car-cards.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HeaderComponent } from './components/header/header.component';
     InputCarComponent,
     ZoomDirective,
     HeaderComponent,
+    CarCardsComponent,
   ],
   imports: [
     BrowserModule,
