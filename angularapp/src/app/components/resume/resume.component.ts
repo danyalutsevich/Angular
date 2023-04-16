@@ -14,6 +14,8 @@ export class ResumeComponent {
   website: string = 'https://www.website.com';
   summary: string = 'Summary of your skills and experience.';
   skills: string[] = ['Skill 1', 'Skill 2', 'Skill 3'];
+  salary: number = 500.30;
+  availableForWork:number = 0.9;
   experience: any[] = [
     {
       company: 'Company 1',

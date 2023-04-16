@@ -17,7 +17,11 @@ import { FormsModule } from '@angular/forms';
 import { InputCarComponent } from './components/input-car/input-car.component';
 import { ZoomDirective } from './directives/zoom.directive';
 import { HeaderComponent } from './components/header/header.component';
-import { CarCardsComponent } from './car-cards/car-cards.component';
+import { CarCardsComponent } from './components/car-cards/car-cards.component'; 
+import { DataProviderService } from './services/data-provider.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TestFormComponent } from './components/test-form/test-form.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,8 @@ import { CarCardsComponent } from './car-cards/car-cards.component';
     ZoomDirective,
     HeaderComponent,
     CarCardsComponent,
+    TestFormComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -39,9 +45,13 @@ import { CarCardsComponent } from './car-cards/car-cards.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    DataProviderService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
