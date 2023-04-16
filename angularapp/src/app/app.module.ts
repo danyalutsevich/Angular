@@ -22,6 +22,7 @@ import { DataProviderService } from './services/data-provider.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TestFormComponent } from './components/test-form/test-form.component';
+import { BiggestMachineComponent } from './components/biggest-machine/biggest-machine.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { TestFormComponent } from './components/test-form/test-form.component';
     HeaderComponent,
     CarCardsComponent,
     TestFormComponent,
+    BiggestMachineComponent,
     
   ],
   imports: [
