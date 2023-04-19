@@ -1,0 +1,37 @@
+<header class="p-3 brightness-75 bg-slate-700 space-x-1">
+  <input class="rounded p-1" [(ngModel)]="searchValue" (change)="search()" placeholder="Search" />
+  <input class="rounded p-1" [(ngModel)]="year" (change)="search()" placeholder="Year" />
+</header>
+
+<div class="flex flex-col items-center justify-center text-white text-left">
+
+  <img src={{response?.Poster}} />
+  <h1 class="text-3xl">{{response?.Title}}</h1>
+  <div>
+
+    <p>{{response?.Plot}}</p>
+    <p>{{response?.Year}}</p>
+    <p>{{response?.Released}}</p>
+    <p>{{response?.Runtime}}</p>
+    <p>Genre: {{response?.Genre}}</p>
+    <p>Director: {{response?.Director}}</p>
+    <p>Writer: {{response?.Writer}}</p>
+    <p>Actors: {{response?.Actors}}</p>
+    <p>Language: {{response?.Language}}</p>
+    <p>Country: {{response?.Country}}</p>
+    <p>{{response?.Awards}}</p>
+    <p>{{response?.Metascore}}</p>
+    <p>{{response?.imdbRating}}</p>
+    <p>{{response?.imdbVotes}}</p>
+    <p>{{response?.imdbID}}</p>
+    <p>{{response?.Type}}</p>
+    <p>{{response?.DVD}}</p>
+    <p>BoxOffice: {{response?.BoxOffice}}</p>
+    <p>{{response?.Production}}</p>
+    <a href="{{response?.Website}}">{{response?.Website}}</a>
+    <div *ngFor="let rate of response?.Ratings">
+      <p>{{rate.Source}}</p>
+      <p>{{rate.Value}}</p>
+    </div>
+  </div>
+</div>
