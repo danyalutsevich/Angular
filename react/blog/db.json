@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "post_1",
+      "body": "post_1"
+    },
+    {
+      "id": 2,
+      "title": "post_2",
+      "body": "post_2"
+    },
+    {
+      "id": 3,
+      "title": "post_3",
+      "body": "post_3"
+    },
+    {
+      "id": 4,
+      "title": "post_4",
+      "body": "post_4"
+    },
+    {
+      "id": 5,
+      "title": "post_5",
+      "body": "post_5"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "login": "student",
+      "password": "student"
+    },
+    {
+      "id": 2,
+      "login": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 3,
+      "login": "teacher",
+      "password": "teacher"
+    }
+  ]
+}
